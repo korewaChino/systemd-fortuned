@@ -1,0 +1,9 @@
+[Unit]
+Description=QoTD
+
+[Service]
+ExecStart=-/usr/bin/fortune
+StandardOutput=socket
+DynamicUser=yes
+ProtectHome=true
+PrivateUsers=true
